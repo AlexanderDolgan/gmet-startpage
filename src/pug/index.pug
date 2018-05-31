@@ -1,0 +1,32 @@
+include partials/head
+body
+	#site-wrapper
+		section#site-header
+			nav.main-nav
+				//- mobile navigarion full screen 
+				include partials/site-header/nav-mob
+				#nav-open-btn.nav-open-btn
+				include partials/site-header/nav-screen
+			.social
+				a(href="//www.facebook.com/megobari15/" target="_blank").ic-fb
+				a(href="//www.instagram.com/megobari.wine/" target="_blank").ic-in
+
+
+		section#site-main
+			.info
+				.info-logo
+					img( src="img/assets/brand/logo.svg" alt="Megobari logo")
+				.info-text
+					h2 Грузинский винный бар
+				address.info-address
+					span
+						a(href="https://yandex.ru/maps/213/moscow/?mode=search&ll=37.636778%2C55.757921&z=16&text=%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%9C%D0%B0%D1%80%D0%BE%D1%81%D0%B5%D0%B9%D0%BA%D0%B0%2C%2015&sll=10.854186%2C49.182076&sspn=72.949219%2C35.073371") Маросейка, 15
+					span 
+						a(href="tel:89057004007") т. +7 (905) 700-40-07
+						a(href="tel:89647004007") т. +7 (964) 700-40-07
+					span.time График работы:
+					span ежедневно с 11:00 до 00:00
+
+			
+		section#site-footer
+			include partials/site-footer
